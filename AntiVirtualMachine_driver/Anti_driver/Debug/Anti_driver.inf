@@ -1,0 +1,32 @@
+;
+; Anti_driver.inf
+;
+
+[Version]
+Signature="$WINDOWS NT$"
+Class=System
+ClassGuid={4d36e97d-e325-11ce-bfc1-08002be10318}
+Provider=%ManufacturerName%
+DriverVer = 02/16/2019,11.30.3.420
+CatalogFile=Anti_driver.cat
+
+[DestinationDirs]
+DefaultDestDir = 12
+
+
+[SourceDisksNames]
+1 = %DiskName%,,,""
+
+[SourceDisksFiles]
+
+
+[Manufacturer]
+%ManufacturerName%=Standard,NTx86
+
+[Standard.NTx86]
+
+
+[Strings]
+ManufacturerName="<Your manufacturer name>" ;TODO: Replace with your manufacturer name
+ClassName=""
+DiskName="Anti_driver Source Disk"

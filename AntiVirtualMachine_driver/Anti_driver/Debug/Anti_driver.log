@@ -1,0 +1,21 @@
+﻿  Building 'Anti_driver' with toolset 'WindowsKernelModeDriver10.0' and the 'Desktop' target platform.
+  Stamping Debug\Anti_driver.inf
+  Stamping [Version] section with DriverVer=02/16/2019,11.30.3.420
+  main.c
+f:\sources\vs_project\anti_driver\anti_driver\main.c(39): warning C4100: “DriverObject”: 未引用的形参
+f:\sources\vs_project\anti_driver\anti_driver\main.c(53): warning C4100: “context”: 未引用的形参
+f:\sources\vs_project\anti_driver\anti_driver\main.c(53): warning C4100: “DeviceObject”: 未引用的形参
+f:\sources\vs_project\anti_driver\anti_driver\main.c(85): warning C4047: “函数”:“ULONG”与“char [4]”的间接级别不同
+f:\sources\vs_project\anti_driver\anti_driver\main.c(85): warning C4024: “ExAllocatePoolWithTag”: 形参和实参 3 的类型不同
+f:\sources\vs_project\anti_driver\anti_driver\main.c(68): warning C4189: “EndAddr”: 局部变量已初始化但不引用
+f:\sources\vs_project\anti_driver\anti_driver\main.c(68): warning C4189: “BaseAddr”: 局部变量已初始化但不引用
+f:\sources\vs_project\anti_driver\anti_driver\main.c(123): warning C4100: “context”: 未引用的形参
+f:\sources\vs_project\anti_driver\anti_driver\main.c(165): warning C4133: “函数”: 从“char [15]”到“PCWSTR”的类型不兼容
+f:\sources\vs_project\anti_driver\anti_driver\main.c(142): warning C4047: “初始化”:“NTSTATUS”与“void *”的间接级别不同
+f:\sources\vs_project\anti_driver\anti_driver\main.c(140): warning C4100: “RegPath”: 未引用的形参
+cpuid.obj : error LNK2019: 无法解析的外部符号 a，该符号在函数 Getcpuid 中被引用
+cpuid.obj : error LNK2019: 无法解析的外部符号 b，该符号在函数 Getcpuid 中被引用
+cpuid.obj : error LNK2019: 无法解析的外部符号 c_var，该符号在函数 Getcpuid 中被引用
+cpuid.obj : error LNK2019: 无法解析的外部符号 d，该符号在函数 Getcpuid 中被引用
+main.obj : error LNK2019: 无法解析的外部符号 _getcpuid@0，该符号在函数 _TimerRoutine@8 中被引用
+F:\Sources\vs_project\Anti_driver\Debug\Anti_driver.sys : fatal error LNK1120: 5 个无法解析的外部命令

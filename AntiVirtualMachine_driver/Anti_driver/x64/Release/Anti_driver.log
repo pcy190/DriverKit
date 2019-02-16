@@ -1,0 +1,35 @@
+﻿  Building 'Anti_driver' with toolset 'WindowsKernelModeDriver10.0' and the 'Desktop' target platform.
+C:\Program Files\VisualStudio\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(402,5): warning MSB8038: 已启用 Spectre 缓解，但找不到 Spectre 缓解库。验证 Visual Studio 工作负荷包括 Spectre 缓解库。有关详细信息，请参阅 https://aka.ms/Ofhn4c。
+  Stamping x64\Release\Anti_driver.inf
+  Stamping [Version] section with DriverVer=02/16/2019,21.53.44.469
+  Assembling cpuid.asm...
+  main.c
+f:\sources\vs_project\anti_driver\anti_driver\main.c(55): warning C4100: “context”: 未引用的形参
+f:\sources\vs_project\anti_driver\anti_driver\main.c(55): warning C4100: “DeviceObject”: 未引用的形参
+f:\sources\vs_project\anti_driver\anti_driver\main.c(87): warning C4047: “函数”:“ULONG”与“char [4]”的间接级别不同
+f:\sources\vs_project\anti_driver\anti_driver\main.c(87): warning C4024: “ExAllocatePoolWithTag”: 形参和实参 3 的类型不同
+f:\sources\vs_project\anti_driver\anti_driver\main.c(70): warning C4189: “EndAddr”: 局部变量已初始化但不引用
+f:\sources\vs_project\anti_driver\anti_driver\main.c(70): warning C4189: “BaseAddr”: 局部变量已初始化但不引用
+f:\sources\vs_project\anti_driver\anti_driver\main.c(125): warning C4100: “context”: 未引用的形参
+f:\sources\vs_project\anti_driver\anti_driver\main.c(146): warning C4113: “void (__cdecl *)()”和“PDRIVER_UNLOAD”的参数列表不同
+f:\sources\vs_project\anti_driver\anti_driver\main.c(167): warning C4133: “函数”: 从“char [15]”到“PCWSTR”的类型不兼容
+f:\sources\vs_project\anti_driver\anti_driver\main.c(144): warning C4047: “初始化”:“NTSTATUS”与“void *”的间接级别不同
+f:\sources\vs_project\anti_driver\anti_driver\main.c(142): warning C4100: “RegPath”: 未引用的形参
+  Anti_driver.vcxproj -> F:\Sources\vs_project\Anti_driver\x64\Release\Anti_driver.sys
+  Done Adding Additional Store
+  Successfully signed: F:\Sources\vs_project\Anti_driver\x64\Release\Anti_driver.sys
+  
+  ........................
+  Signability test complete.
+  
+  Errors:
+  None
+  
+  Warnings:
+  None
+  
+  Catalog generation complete.
+  F:\Sources\vs_project\Anti_driver\x64\Release\Anti_driver\anti_driver.cat
+  Done Adding Additional Store
+  Successfully signed: F:\Sources\vs_project\Anti_driver\x64\Release\Anti_driver\anti_driver.cat
+  

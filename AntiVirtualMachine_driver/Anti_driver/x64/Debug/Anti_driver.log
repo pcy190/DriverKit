@@ -1,0 +1,21 @@
+﻿  Building 'Anti_driver' with toolset 'WindowsKernelModeDriver10.0' and the 'Desktop' target platform.
+  Stamping x64\Debug\Anti_driver.inf
+  Stamping [Version] section with DriverVer=02/16/2019,18.0.27.762
+  Anti_driver.vcxproj -> F:\Sources\vs_project\Anti_driver\x64\Debug\Anti_driver.sys
+  Done Adding Additional Store
+  Successfully signed: F:\Sources\vs_project\Anti_driver\x64\Debug\Anti_driver.sys
+  
+  .........................
+  Signability test complete.
+  
+  Errors:
+  None
+  
+  Warnings:
+  None
+  
+  Catalog generation complete.
+  F:\Sources\vs_project\Anti_driver\x64\Debug\Anti_driver\anti_driver.cat
+  Done Adding Additional Store
+  Successfully signed: F:\Sources\vs_project\Anti_driver\x64\Debug\Anti_driver\anti_driver.cat
+  
