@@ -1,5 +1,5 @@
 # AntiVirtualMachine
-- This driver can detect various VirtualMachine through two special ways.
+- This driver can detect various VirtualMachine including VMware and VMbox through two special ways.
 - It supports both x86 and x64.
-
+- In most cases, it is effective when you modify the VM.
 Based on vs2017.
