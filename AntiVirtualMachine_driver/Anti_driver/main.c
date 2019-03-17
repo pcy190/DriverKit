@@ -32,8 +32,8 @@ PDEVICE_OBJECT pDevice;
 PETHREAD pThreadObject = NULL;
 BOOLEAN boom = FALSE;
 
-//eaxÎªCPUĞÍºÅ
-//ÈôÎªĞéÄâ»ú£¬Ôòecx×î¸ßÎ»Îª1;Èç¹ûÊÇÎïÀí»ú£¬Ôò×î¸ßÎ»Îª0.
+//eaxä¸ºCPUå‹å·
+//è‹¥ä¸ºè™šæ‹Ÿæœºï¼Œåˆ™ecxæœ€é«˜ä½ä¸º1;å¦‚æœæ˜¯ç‰©ç†æœºï¼Œåˆ™æœ€é«˜ä½ä¸º0.
 //code in cpuid.asm
 DWORD a = 0, b = 0, c_var = 0, d = 0;
 
@@ -164,7 +164,7 @@ NTSTATUS DriverEntry(PDRIVER_OBJECT driverObject, PUNICODE_STRING RegPath) {
 		DbgPrint("Create Device Failed!");
 		return STATUS_UNSUCCESSFUL;
 	}
-	RtlInitUnicodeString(&symLinkName, "\\?\\SybLinkName");
+	RtlInitUnicodeString(&symLinkName, L"\\?\\SybLinkName");
 	status = IoCreateSymbolicLink(&symLinkName, &DeviceName);
 	if (!NT_SUCCESS(status)) {
 		DbgPrint("Create SymLink Failed!");
