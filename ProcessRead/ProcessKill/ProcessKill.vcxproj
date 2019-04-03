@@ -1,0 +1,379 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM64">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM64">
+      <Configuration>Release</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E0C1F70A-49BD-46AF-A606-4D3B7924C461}</ProjectGuid>
+    <TemplateGuid>{dd38f7fc-d7bd-488b-9242-7d8754cde80d}</TemplateGuid>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
+    <Configuration>Debug</Configuration>
+    <Platform Condition="'$(Platform)' == ''">Win32</Platform>
+    <RootNamespace>ProcessKill</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <TargetVersion>Windows7</TargetVersion>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>WindowsKernelModeDriver10.0</PlatformToolset>
+    <ConfigurationType>Driver</ConfigurationType>
+    <DriverType>WDM</DriverType>
+    <SpectreMitigation>false</SpectreMitigation>
+    <DriverTargetPlatform>Desktop</DriverTargetPlatform>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <TargetVersion>Windows7</TargetVersion>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>WindowsKernelModeDriver10.0</PlatformToolset>
+    <ConfigurationType>Driver</ConfigurationType>
+    <DriverType>WDM</DriverType>
+    <SpectreMitigation>false</SpectreMitigation>
+    <DriverTargetPlatform>Desktop</DriverTargetPlatform>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <TargetVersion>Windows7</TargetVersion>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>WindowsKernelModeDriver10.0</PlatformToolset>
+    <ConfigurationType>Driver</ConfigurationType>
+    <DriverType>WDM</DriverType>
+    <SpectreMitigation>false</SpectreMitigation>
+    <DriverTargetPlatform>Desktop</DriverTargetPlatform>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <TargetVersion>Windows7</TargetVersion>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>WindowsKernelModeDriver10.0</PlatformToolset>
+    <ConfigurationType>Driver</ConfigurationType>
+    <DriverType>WDM</DriverType>
+    <SpectreMitigation>false</SpectreMitigation>
+    <DriverTargetPlatform>Desktop</DriverTargetPlatform>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <TargetVersion>Windows10</TargetVersion>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>WindowsKernelModeDriver10.0</PlatformToolset>
+    <ConfigurationType>Driver</ConfigurationType>
+    <DriverType>WDM</DriverType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <TargetVersion>Windows10</TargetVersion>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>WindowsKernelModeDriver10.0</PlatformToolset>
+    <ConfigurationType>Driver</ConfigurationType>
+    <DriverType>WDM</DriverType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'" Label="Configuration">
+    <TargetVersion>Windows10</TargetVersion>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>WindowsKernelModeDriver10.0</PlatformToolset>
+    <ConfigurationType>Driver</ConfigurationType>
+    <DriverType>WDM</DriverType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'" Label="Configuration">
+    <TargetVersion>Windows10</TargetVersion>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>WindowsKernelModeDriver10.0</PlatformToolset>
+    <ConfigurationType>Driver</ConfigurationType>
+    <DriverType>WDM</DriverType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <DebuggerFlavor>DbgengKernelDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <DebuggerFlavor>DbgengKernelDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <DebuggerFlavor>DbgengKernelDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <DebuggerFlavor>DbgengKernelDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <DebuggerFlavor>DbgengKernelDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <DebuggerFlavor>DbgengKernelDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
+    <DebuggerFlavor>DbgengKernelDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
+    <DebuggerFlavor>DbgengKernelDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <TreatWarningAsError>false</TreatWarningAsError>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <TreatWarningAsError>false</TreatWarningAsError>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <TreatWarningAsError>false</TreatWarningAsError>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <TreatWarningAsError>false</TreatWarningAsError>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Inf Include="ProcessKill.inf" />
+  </ItemGroup>
+  <ItemGroup>
+    <FilesToPackage Include="$(TargetPath)" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Wdk\CmKernel.inl" />
+    <None Include="Wdk\CmStruct.inl" />
+    <None Include="Wdk\Cm\build_10240.inl" />
+    <None Include="Wdk\Cm\build_10586.inl" />
+    <None Include="Wdk\Cm\build_14393.inl" />
+    <None Include="Wdk\Cm\build_15063.inl" />
+    <None Include="Wdk\Cm\build_16299.inl" />
+    <None Include="Wdk\Cm\build_17134.inl" />
+    <None Include="Wdk\Cm\build_17763.inl" />
+    <None Include="Wdk\Cm\build_7600.inl" />
+    <None Include="Wdk\Cm\build_7601.inl" />
+    <None Include="Wdk\Cm\build_9200.inl" />
+    <None Include="Wdk\Cm\build_9600.inl" />
+    <None Include="Wdk\DbgKernel.inl" />
+    <None Include="Wdk\DbgStruct.inl" />
+    <None Include="Wdk\Dbg\build_10240.inl" />
+    <None Include="Wdk\Dbg\build_10586.inl" />
+    <None Include="Wdk\Dbg\build_14393.inl" />
+    <None Include="Wdk\Dbg\build_15063.inl" />
+    <None Include="Wdk\Dbg\build_16299.inl" />
+    <None Include="Wdk\Dbg\build_17134.inl" />
+    <None Include="Wdk\Dbg\build_17763.inl" />
+    <None Include="Wdk\Dbg\build_7600.inl" />
+    <None Include="Wdk\Dbg\build_7601.inl" />
+    <None Include="Wdk\Dbg\build_9200.inl" />
+    <None Include="Wdk\Dbg\build_9600.inl" />
+    <None Include="Wdk\ExKernel.inl" />
+    <None Include="Wdk\ExStruct.inl" />
+    <None Include="Wdk\Ex\build_10240.inl" />
+    <None Include="Wdk\Ex\build_10586.inl" />
+    <None Include="Wdk\Ex\build_14393.inl" />
+    <None Include="Wdk\Ex\build_15063.inl" />
+    <None Include="Wdk\Ex\build_16299.inl" />
+    <None Include="Wdk\Ex\build_17134.inl" />
+    <None Include="Wdk\Ex\build_17763.inl" />
+    <None Include="Wdk\Ex\build_7600.inl" />
+    <None Include="Wdk\Ex\build_7601.inl" />
+    <None Include="Wdk\Ex\build_9200.inl" />
+    <None Include="Wdk\Ex\build_9600.inl" />
+    <None Include="Wdk\FsKernel.inl" />
+    <None Include="Wdk\FsStruct.inl" />
+    <None Include="Wdk\Fs\build_10240.inl" />
+    <None Include="Wdk\Fs\build_10586.inl" />
+    <None Include="Wdk\Fs\build_14393.inl" />
+    <None Include="Wdk\Fs\build_15063.inl" />
+    <None Include="Wdk\Fs\build_16299.inl" />
+    <None Include="Wdk\Fs\build_17134.inl" />
+    <None Include="Wdk\Fs\build_17763.inl" />
+    <None Include="Wdk\Fs\build_7600.inl" />
+    <None Include="Wdk\Fs\build_7601.inl" />
+    <None Include="Wdk\Fs\build_9200.inl" />
+    <None Include="Wdk\Fs\build_9600.inl" />
+    <None Include="Wdk\IoKernel.inl" />
+    <None Include="Wdk\IoStruct.inl" />
+    <None Include="Wdk\Io\build_10240.inl" />
+    <None Include="Wdk\Io\build_10586.inl" />
+    <None Include="Wdk\Io\build_14393.inl" />
+    <None Include="Wdk\Io\build_15063.inl" />
+    <None Include="Wdk\Io\build_16299.inl" />
+    <None Include="Wdk\Io\build_17134.inl" />
+    <None Include="Wdk\Io\build_17763.inl" />
+    <None Include="Wdk\Io\build_7600.inl" />
+    <None Include="Wdk\Io\build_7601.inl" />
+    <None Include="Wdk\Io\build_9200.inl" />
+    <None Include="Wdk\Io\build_9600.inl" />
+    <None Include="Wdk\KeKernel.inl" />
+    <None Include="Wdk\KeStruct.inl" />
+    <None Include="Wdk\Ke\build_10240.inl" />
+    <None Include="Wdk\Ke\build_10586.inl" />
+    <None Include="Wdk\Ke\build_14393.inl" />
+    <None Include="Wdk\Ke\build_15063.inl" />
+    <None Include="Wdk\Ke\build_16299.inl" />
+    <None Include="Wdk\Ke\build_17134.inl" />
+    <None Include="Wdk\Ke\build_17763.inl" />
+    <None Include="Wdk\Ke\build_7600.inl" />
+    <None Include="Wdk\Ke\build_7601.inl" />
+    <None Include="Wdk\Ke\build_9200.inl" />
+    <None Include="Wdk\Ke\build_9600.inl" />
+    <None Include="Wdk\LPCKernel.inl" />
+    <None Include="Wdk\LPCStruct.inl" />
+    <None Include="Wdk\LPC\build_10240.inl" />
+    <None Include="Wdk\LPC\build_10586.inl" />
+    <None Include="Wdk\LPC\build_14393.inl" />
+    <None Include="Wdk\LPC\build_15063.inl" />
+    <None Include="Wdk\LPC\build_16299.inl" />
+    <None Include="Wdk\LPC\build_17134.inl" />
+    <None Include="Wdk\LPC\build_17763.inl" />
+    <None Include="Wdk\LPC\build_7600.inl" />
+    <None Include="Wdk\LPC\build_7601.inl" />
+    <None Include="Wdk\LPC\build_9200.inl" />
+    <None Include="Wdk\LPC\build_9600.inl" />
+    <None Include="Wdk\MmKernel.inl" />
+    <None Include="Wdk\MmStruct.inl" />
+    <None Include="Wdk\Mm\build_10240.inl" />
+    <None Include="Wdk\Mm\build_10586.inl" />
+    <None Include="Wdk\Mm\build_14393.inl" />
+    <None Include="Wdk\Mm\build_15063.inl" />
+    <None Include="Wdk\Mm\build_16299.inl" />
+    <None Include="Wdk\Mm\build_17134.inl" />
+    <None Include="Wdk\Mm\build_17763.inl" />
+    <None Include="Wdk\Mm\build_7600.inl" />
+    <None Include="Wdk\Mm\build_7601.inl" />
+    <None Include="Wdk\Mm\build_9200.inl" />
+    <None Include="Wdk\Mm\build_9600.inl" />
+    <None Include="Wdk\Native.inl" />
+    <None Include="Wdk\NetKernel.inl" />
+    <None Include="Wdk\NetStruct.inl" />
+    <None Include="Wdk\ObKernel.inl" />
+    <None Include="Wdk\ObStruct.inl" />
+    <None Include="Wdk\Ob\build_10240.inl" />
+    <None Include="Wdk\Ob\build_10586.inl" />
+    <None Include="Wdk\Ob\build_14393.inl" />
+    <None Include="Wdk\Ob\build_15063.inl" />
+    <None Include="Wdk\Ob\build_16299.inl" />
+    <None Include="Wdk\Ob\build_17134.inl" />
+    <None Include="Wdk\Ob\build_17763.inl" />
+    <None Include="Wdk\Ob\build_7600.inl" />
+    <None Include="Wdk\Ob\build_7601.inl" />
+    <None Include="Wdk\Ob\build_9200.inl" />
+    <None Include="Wdk\Ob\build_9600.inl" />
+    <None Include="Wdk\PsKernel.inl" />
+    <None Include="Wdk\PsStruct.inl" />
+    <None Include="Wdk\Ps\build_10240.inl" />
+    <None Include="Wdk\Ps\build_10586.inl" />
+    <None Include="Wdk\Ps\build_14393.inl" />
+    <None Include="Wdk\Ps\build_15063.inl" />
+    <None Include="Wdk\Ps\build_16299.inl" />
+    <None Include="Wdk\Ps\build_17134.inl" />
+    <None Include="Wdk\Ps\build_17763.inl" />
+    <None Include="Wdk\Ps\build_7600.inl" />
+    <None Include="Wdk\Ps\build_7601.inl" />
+    <None Include="Wdk\Ps\build_9200.inl" />
+    <None Include="Wdk\Ps\build_9600.inl" />
+    <None Include="Wdk\RtlKernel.inl" />
+    <None Include="Wdk\RtlStruct.inl" />
+    <None Include="Wdk\Rtl\build_10240.inl" />
+    <None Include="Wdk\Rtl\build_10586.inl" />
+    <None Include="Wdk\Rtl\build_14393.inl" />
+    <None Include="Wdk\Rtl\build_15063.inl" />
+    <None Include="Wdk\Rtl\build_16299.inl" />
+    <None Include="Wdk\Rtl\build_17134.inl" />
+    <None Include="Wdk\Rtl\build_17763.inl" />
+    <None Include="Wdk\Rtl\build_7600.inl" />
+    <None Include="Wdk\Rtl\build_7601.inl" />
+    <None Include="Wdk\Rtl\build_9200.inl" />
+    <None Include="Wdk\Rtl\build_9600.inl" />
+    <None Include="Wdk\SeKernel.inl" />
+    <None Include="Wdk\SeMacro.inl" />
+    <None Include="Wdk\SeStruct.inl" />
+    <None Include="Wdk\Se\build_10240.inl" />
+    <None Include="Wdk\Se\build_10586.inl" />
+    <None Include="Wdk\Se\build_14393.inl" />
+    <None Include="Wdk\Se\build_15063.inl" />
+    <None Include="Wdk\Se\build_16299.inl" />
+    <None Include="Wdk\Se\build_17134.inl" />
+    <None Include="Wdk\Se\build_17763.inl" />
+    <None Include="Wdk\Se\build_7600.inl" />
+    <None Include="Wdk\Se\build_7601.inl" />
+    <None Include="Wdk\Se\build_9200.inl" />
+    <None Include="Wdk\Se\build_9600.inl" />
+    <None Include="Wdk\TsKernel.inl" />
+    <None Include="Wdk\TsStruct.inl" />
+    <None Include="Wdk\Ts\build_10240.inl" />
+    <None Include="Wdk\Ts\build_10586.inl" />
+    <None Include="Wdk\Ts\build_14393.inl" />
+    <None Include="Wdk\Ts\build_15063.inl" />
+    <None Include="Wdk\Ts\build_16299.inl" />
+    <None Include="Wdk\Ts\build_17134.inl" />
+    <None Include="Wdk\Ts\build_17763.inl" />
+    <None Include="Wdk\Ts\build_7600.inl" />
+    <None Include="Wdk\Ts\build_7601.inl" />
+    <None Include="Wdk\Ts\build_9200.inl" />
+    <None Include="Wdk\Ts\build_9600.inl" />
+    <None Include="Wdk\WmiKernel.inl" />
+    <None Include="Wdk\WmiStruct.inl" />
+    <None Include="Wdk\Wmi\build_10240.inl" />
+    <None Include="Wdk\Wmi\build_10586.inl" />
+    <None Include="Wdk\Wmi\build_14393.inl" />
+    <None Include="Wdk\Wmi\build_15063.inl" />
+    <None Include="Wdk\Wmi\build_16299.inl" />
+    <None Include="Wdk\Wmi\build_17134.inl" />
+    <None Include="Wdk\Wmi\build_17763.inl" />
+    <None Include="Wdk\Wmi\build_7600.inl" />
+    <None Include="Wdk\Wmi\build_7601.inl" />
+    <None Include="Wdk\Wmi\build_9200.inl" />
+    <None Include="Wdk\Wmi\build_9600.inl" />
+    <None Include="Wdk\ZwKernel.inl" />
+    <None Include="Wdk\ZwStruct.inl" />
+    <None Include="Wdk\Zw\build_10240.inl" />
+    <None Include="Wdk\Zw\build_10586.inl" />
+    <None Include="Wdk\Zw\build_14393.inl" />
+    <None Include="Wdk\Zw\build_15063.inl" />
+    <None Include="Wdk\Zw\build_16299.inl" />
+    <None Include="Wdk\Zw\build_17134.inl" />
+    <None Include="Wdk\Zw\build_17763.inl" />
+    <None Include="Wdk\Zw\build_7600.inl" />
+    <None Include="Wdk\Zw\build_7601.inl" />
+    <None Include="Wdk\Zw\build_9200.inl" />
+    <None Include="Wdk\Zw\build_9600.inl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Wdk.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

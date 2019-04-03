@@ -1,0 +1,635 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Driver Files">
+      <UniqueIdentifier>{8E41214B-6785-4CFE-B992-037D68949A14}</UniqueIdentifier>
+      <Extensions>inf;inv;inx;mof;mc;</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Inf Include="ProcessKill.inf">
+      <Filter>Driver Files</Filter>
+    </Inf>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Wdk\Cm\build_10240.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Cm\build_10586.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Cm\build_14393.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Cm\build_15063.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Cm\build_16299.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Cm\build_17134.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Cm\build_17763.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Cm\build_7600.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Cm\build_7601.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Cm\build_9200.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Cm\build_9600.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\CmKernel.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\CmStruct.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Dbg\build_10240.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Dbg\build_10586.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Dbg\build_14393.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Dbg\build_15063.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Dbg\build_16299.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Dbg\build_17134.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Dbg\build_17763.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Dbg\build_7600.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Dbg\build_7601.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Dbg\build_9200.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Dbg\build_9600.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\DbgKernel.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\DbgStruct.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Ex\build_10240.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Ex\build_10586.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Ex\build_14393.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Ex\build_15063.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Ex\build_16299.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Ex\build_17134.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Ex\build_17763.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Ex\build_7600.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Ex\build_7601.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Ex\build_9200.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Ex\build_9600.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\ExKernel.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\ExStruct.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Fs\build_10240.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Fs\build_10586.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Fs\build_14393.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Fs\build_15063.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Fs\build_16299.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Fs\build_17134.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Fs\build_17763.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Fs\build_7600.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Fs\build_7601.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Fs\build_9200.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Fs\build_9600.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\FsKernel.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\FsStruct.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Io\build_10240.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Io\build_10586.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Io\build_14393.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Io\build_15063.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Io\build_16299.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Io\build_17134.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Io\build_17763.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Io\build_7600.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Io\build_7601.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Io\build_9200.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Io\build_9600.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\IoKernel.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\IoStruct.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Ke\build_10240.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Ke\build_10586.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Ke\build_14393.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Ke\build_15063.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Ke\build_16299.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Ke\build_17134.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Ke\build_17763.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Ke\build_7600.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Ke\build_7601.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Ke\build_9200.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Ke\build_9600.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\KeKernel.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\KeStruct.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\LPC\build_10240.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\LPC\build_10586.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\LPC\build_14393.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\LPC\build_15063.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\LPC\build_16299.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\LPC\build_17134.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\LPC\build_17763.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\LPC\build_7600.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\LPC\build_7601.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\LPC\build_9200.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\LPC\build_9600.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\LPCKernel.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\LPCStruct.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Mm\build_10240.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Mm\build_10586.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Mm\build_14393.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Mm\build_15063.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Mm\build_16299.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Mm\build_17134.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Mm\build_17763.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Mm\build_7600.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Mm\build_7601.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Mm\build_9200.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Mm\build_9600.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\MmKernel.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\MmStruct.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Native.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\NetKernel.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\NetStruct.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Ob\build_10240.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Ob\build_10586.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Ob\build_14393.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Ob\build_15063.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Ob\build_16299.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Ob\build_17134.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Ob\build_17763.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Ob\build_7600.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Ob\build_7601.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Ob\build_9200.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Ob\build_9600.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\ObKernel.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\ObStruct.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Ps\build_10240.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Ps\build_10586.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Ps\build_14393.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Ps\build_15063.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Ps\build_16299.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Ps\build_17134.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Ps\build_17763.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Ps\build_7600.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Ps\build_7601.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Ps\build_9200.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Ps\build_9600.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\PsKernel.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\PsStruct.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Rtl\build_10240.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Rtl\build_10586.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Rtl\build_14393.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Rtl\build_15063.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Rtl\build_16299.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Rtl\build_17134.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Rtl\build_17763.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Rtl\build_7600.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Rtl\build_7601.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Rtl\build_9200.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Rtl\build_9600.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\RtlKernel.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\RtlStruct.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Se\build_10240.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Se\build_10586.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Se\build_14393.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Se\build_15063.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Se\build_16299.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Se\build_17134.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Se\build_17763.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Se\build_7600.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Se\build_7601.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Se\build_9200.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Se\build_9600.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\SeKernel.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\SeMacro.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\SeStruct.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Ts\build_10240.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Ts\build_10586.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Ts\build_14393.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Ts\build_15063.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Ts\build_16299.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Ts\build_17134.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Ts\build_17763.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Ts\build_7600.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Ts\build_7601.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Ts\build_9200.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Ts\build_9600.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\TsKernel.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\TsStruct.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Wmi\build_10240.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Wmi\build_10586.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Wmi\build_14393.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Wmi\build_15063.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Wmi\build_16299.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Wmi\build_17134.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Wmi\build_17763.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Wmi\build_7600.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Wmi\build_7601.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Wmi\build_9200.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Wmi\build_9600.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\WmiKernel.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\WmiStruct.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Zw\build_10240.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Zw\build_10586.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Zw\build_14393.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Zw\build_15063.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Zw\build_16299.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Zw\build_17134.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Zw\build_17763.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Zw\build_7600.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Zw\build_7601.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Zw\build_9200.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\Zw\build_9600.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\ZwKernel.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Wdk\ZwStruct.inl">
+      <Filter>Header Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Wdk.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
